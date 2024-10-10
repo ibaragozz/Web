@@ -22,3 +22,12 @@ body {
     border-style: solid;
     border-radius: 20px;
 }
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    right: 500px;
+}
