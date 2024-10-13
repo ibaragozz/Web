@@ -2,11 +2,11 @@
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-   gap: 20px;
+   gap: 20px; /* Отступы между карточками */
 }
 
 .card {
-   width: 400px; /* Ширина карточки */
+   width: 400px; /* Увеличиваем ширину карточки */
    background-color: burlywood;
    border-radius: 20px;
    transition: background-color 0.5s;
@@ -17,11 +17,15 @@
    justify-content: space-between;
 }
 
+.photo {
+   height: 400px; /* Фиксированная высота для всех изображений */
+}
+
 .photo img {
    width: 100%;
-   height: auto;
-   object-fit: contain; /* Изменяем с cover на contain, чтобы не обрезать фото */
-   border-radius: 20px 20px 0 0;
+   height: 100%;
+   object-fit: cover; /* Масштабируем, чтобы изображение занимало всю высоту блока, обрезая при необходимости, сохраняя пропорции */
+   border-radius: 20px 20px 0 0; /* Скругляем только верхние углы */
 }
 
 .info {
